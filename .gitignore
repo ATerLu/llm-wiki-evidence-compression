@@ -1,0 +1,16 @@
+.env
+.env.*
+*.local
+*.pem
+*.key
+*.log
+*.vhdx
+*.vhd
+*.sqlite3
+__pycache__/
+*.py[cod]
+.venv/
+runtime/
+**/data/raw/
+output/
+checkpoints/

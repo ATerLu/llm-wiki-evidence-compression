@@ -1,0 +1,321 @@
+{
+  "start_utc": "2026-11-12T11:34:26.496894+00:00",
+  "end_utc": "2026-11-12T11:35:41.008737+00:00",
+  "wiki_artifacts": 9689,
+  "model": "qwen3.5-plus-2026-04-20",
+  "search": {
+    "page_size": 64,
+    "similarity_threshold": 0.0,
+    "keywords_similarity_weight": 0.7,
+    "knn_top_k": 128,
+    "knn_num_candidates": 256,
+    "rerank_candidates_count": 64,
+    "knowledge_compilation_scope": "dataset"
+  },
+  "full_budget": 2560,
+  "short_budget": 1024,
+  "script_sha256": "a15549fd6276406d838a2f2522f9bcd4836b754d03fe5d99d7a0e3c5826836b0",
+  "tokenizer_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+  "results": {
+    "all": {
+      "A_raw": {
+        "em": 0.51,
+        "f1": 0.6299772486772487,
+        "full_support": 89,
+        "all_support_touched": 89,
+        "api_prompt_p50": 1743.0,
+        "api_prompt_total": 177496,
+        "n": 100,
+        "wiki_chunks": 0,
+        "output_tokens": 519,
+        "search_ms_p50": 878.8622000065516,
+        "captured_plus_assembly_ms_p50": 942.4348999964423,
+        "observed_pipeline_ms_p50": 2722.889500008023,
+        "route": {},
+        "vs_A": {
+          "delta": 0.0,
+          "improved": 0,
+          "worsened": 0,
+          "questions": 100,
+          "families": 100,
+          "largest_family": 1,
+          "f1_delta_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "B_native_wiki": {
+        "em": 0.52,
+        "f1": 0.6359772486772487,
+        "full_support": 89,
+        "all_support_touched": 89,
+        "api_prompt_p50": 1795.5,
+        "api_prompt_total": 184676,
+        "n": 100,
+        "wiki_chunks": 100,
+        "output_tokens": 552,
+        "search_ms_p50": 939.1998999999487,
+        "captured_plus_assembly_ms_p50": 1448.4603000018978,
+        "observed_pipeline_ms_p50": 3402.8069999985746,
+        "route": {},
+        "vs_A": {
+          "delta": 0.006,
+          "improved": 1,
+          "worsened": 1,
+          "questions": 100,
+          "families": 100,
+          "largest_family": 1,
+          "f1_delta_ci95": [
+            -0.012000000000000002,
+            0.03
+          ]
+        }
+      },
+      "C_guarded": {
+        "em": 0.52,
+        "f1": 0.6359772486772487,
+        "full_support": 89,
+        "all_support_touched": 89,
+        "api_prompt_p50": 1795.5,
+        "api_prompt_total": 184676,
+        "n": 100,
+        "wiki_chunks": 100,
+        "output_tokens": 552,
+        "search_ms_p50": 939.1998999999487,
+        "captured_plus_assembly_ms_p50": 1465.046049997909,
+        "observed_pipeline_ms_p50": 3430.080350000935,
+        "route": {
+          "fallback_no_verified_wiki": 96,
+          "fallback_no_supported_wiki_chain": 4
+        },
+        "vs_A": {
+          "delta": 0.006,
+          "improved": 1,
+          "worsened": 1,
+          "questions": 100,
+          "families": 100,
+          "largest_family": 1,
+          "f1_delta_ci95": [
+            -0.012000000000000002,
+            0.03
+          ]
+        },
+        "vs_B": {
+          "delta": 0.0,
+          "improved": 0,
+          "worsened": 0,
+          "questions": 100,
+          "families": 100,
+          "largest_family": 1,
+          "f1_delta_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "hotpot": {
+      "A_raw": {
+        "em": 0.64,
+        "f1": 0.7145555555555556,
+        "full_support": 49,
+        "all_support_touched": 49,
+        "api_prompt_p50": 1370.5,
+        "api_prompt_total": 70162,
+        "n": 50,
+        "wiki_chunks": 0,
+        "output_tokens": 215,
+        "search_ms_p50": 800.3085000018473,
+        "captured_plus_assembly_ms_p50": 840.7857499914826,
+        "observed_pipeline_ms_p50": 2464.504499992472,
+        "route": {},
+        "vs_A": {
+          "delta": 0.0,
+          "improved": 0,
+          "worsened": 0,
+          "questions": 50,
+          "families": 50,
+          "largest_family": 1,
+          "f1_delta_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "B_native_wiki": {
+        "em": 0.66,
+        "f1": 0.7265555555555555,
+        "full_support": 49,
+        "all_support_touched": 49,
+        "api_prompt_p50": 1482.5,
+        "api_prompt_total": 76427,
+        "n": 50,
+        "wiki_chunks": 79,
+        "output_tokens": 244,
+        "search_ms_p50": 958.2029999946826,
+        "captured_plus_assembly_ms_p50": 1490.9239499975229,
+        "observed_pipeline_ms_p50": 3161.241350011551,
+        "route": {},
+        "vs_A": {
+          "delta": 0.012,
+          "improved": 1,
+          "worsened": 1,
+          "questions": 50,
+          "families": 50,
+          "largest_family": 1,
+          "f1_delta_ci95": [
+            -0.024000000000000004,
+            0.06
+          ]
+        }
+      },
+      "C_guarded": {
+        "em": 0.66,
+        "f1": 0.7265555555555555,
+        "full_support": 49,
+        "all_support_touched": 49,
+        "api_prompt_p50": 1482.5,
+        "api_prompt_total": 76427,
+        "n": 50,
+        "wiki_chunks": 79,
+        "output_tokens": 244,
+        "search_ms_p50": 958.2029999946826,
+        "captured_plus_assembly_ms_p50": 1511.226849994273,
+        "observed_pipeline_ms_p50": 3161.415400012629,
+        "route": {
+          "fallback_no_verified_wiki": 47,
+          "fallback_no_supported_wiki_chain": 3
+        },
+        "vs_A": {
+          "delta": 0.012,
+          "improved": 1,
+          "worsened": 1,
+          "questions": 50,
+          "families": 50,
+          "largest_family": 1,
+          "f1_delta_ci95": [
+            -0.024000000000000004,
+            0.06
+          ]
+        },
+        "vs_B": {
+          "delta": 0.0,
+          "improved": 0,
+          "worsened": 0,
+          "questions": 50,
+          "families": 50,
+          "largest_family": 1,
+          "f1_delta_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "musique": {
+      "A_raw": {
+        "em": 0.38,
+        "f1": 0.5453989417989418,
+        "full_support": 40,
+        "all_support_touched": 40,
+        "api_prompt_p50": 2334.0,
+        "api_prompt_total": 107334,
+        "n": 50,
+        "wiki_chunks": 0,
+        "output_tokens": 304,
+        "search_ms_p50": 933.2500999953481,
+        "captured_plus_assembly_ms_p50": 1053.452650005056,
+        "observed_pipeline_ms_p50": 3017.6823000074364,
+        "route": {},
+        "vs_A": {
+          "delta": 0.0,
+          "improved": 0,
+          "worsened": 0,
+          "questions": 50,
+          "families": 50,
+          "largest_family": 1,
+          "f1_delta_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "B_native_wiki": {
+        "em": 0.38,
+        "f1": 0.5453989417989418,
+        "full_support": 40,
+        "all_support_touched": 40,
+        "api_prompt_p50": 2334.0,
+        "api_prompt_total": 108249,
+        "n": 50,
+        "wiki_chunks": 21,
+        "output_tokens": 308,
+        "search_ms_p50": 939.1998999999487,
+        "captured_plus_assembly_ms_p50": 1379.9384499943699,
+        "observed_pipeline_ms_p50": 3536.5158500062535,
+        "route": {},
+        "vs_A": {
+          "delta": 0.0,
+          "improved": 0,
+          "worsened": 0,
+          "questions": 50,
+          "families": 50,
+          "largest_family": 1,
+          "f1_delta_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "C_guarded": {
+        "em": 0.38,
+        "f1": 0.5453989417989418,
+        "full_support": 40,
+        "all_support_touched": 40,
+        "api_prompt_p50": 2334.0,
+        "api_prompt_total": 108249,
+        "n": 50,
+        "wiki_chunks": 21,
+        "output_tokens": 308,
+        "search_ms_p50": 939.1998999999487,
+        "captured_plus_assembly_ms_p50": 1380.2550999898813,
+        "observed_pipeline_ms_p50": 3550.0658500095597,
+        "route": {
+          "fallback_no_verified_wiki": 49,
+          "fallback_no_supported_wiki_chain": 1
+        },
+        "vs_A": {
+          "delta": 0.0,
+          "improved": 0,
+          "worsened": 0,
+          "questions": 50,
+          "families": 50,
+          "largest_family": 1,
+          "f1_delta_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "vs_B": {
+          "delta": 0.0,
+          "improved": 0,
+          "worsened": 0,
+          "questions": 50,
+          "families": 50,
+          "largest_family": 1,
+          "f1_delta_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "online_query_embeddings": {
+    "successful_embeddings": 200,
+    "paired_embedding_inputs": 4076,
+    "other_calls": 0,
+    "complete_full_run": true
+  }
+}

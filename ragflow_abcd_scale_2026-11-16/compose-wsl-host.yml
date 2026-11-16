@@ -1,0 +1,4 @@
+services:
+  ragflow-cpu:
+    extra_hosts: !override
+      - "host.docker.internal:172.17.0.1"

@@ -1,0 +1,199 @@
+{
+  "arms": {
+    "A": {
+      "f1": 0.6322682539682539,
+      "em": 0.51,
+      "strict_support": 93,
+      "support_touched": 93,
+      "reader_input": 183262,
+      "reader_output": 556,
+      "retrieval_input_archived": 2038,
+      "total_tokens": 185856,
+      "routes": {
+        "baseline": 100
+      }
+    },
+    "B": {
+      "f1": 0.6322682539682539,
+      "em": 0.51,
+      "strict_support": 93,
+      "support_touched": 93,
+      "reader_input": 190496,
+      "reader_output": 549,
+      "retrieval_input_archived": 2038,
+      "total_tokens": 193083,
+      "routes": {
+        "baseline": 100
+      }
+    },
+    "C": {
+      "f1": 0.6372682539682539,
+      "em": 0.52,
+      "strict_support": 90,
+      "support_touched": 93,
+      "reader_input": 183538,
+      "reader_output": 549,
+      "retrieval_input_archived": 2038,
+      "total_tokens": 186125,
+      "routes": {
+        "fallback": 95,
+        "selected": 5
+      }
+    },
+    "D": {
+      "f1": 0.6372682539682539,
+      "em": 0.52,
+      "strict_support": 90,
+      "support_touched": 93,
+      "reader_input": 183538,
+      "reader_output": 549,
+      "retrieval_input_archived": 2038,
+      "total_tokens": 186125,
+      "routes": {
+        "fallback": 95,
+        "selected": 5
+      }
+    }
+  },
+  "comparisons": {
+    "B_vs_A": {
+      "delta": 0.0,
+      "improved": 0,
+      "worsened": 0,
+      "questions": 100,
+      "families": 100,
+      "largest_family": 1,
+      "f1_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_token_delta": 7227,
+      "total_token_delta_rate": 0.038884943181818184,
+      "em_gained": 0,
+      "em_lost": 0,
+      "changed_query_ids": [
+        "2hop__128342_375952",
+        "2hop__256336_714772",
+        "2hop__263728_705527",
+        "2hop__341176_711757",
+        "2hop__463884_807572",
+        "2hop__466700_214359",
+        "2hop__485221_544917",
+        "2hop__527400_159673",
+        "2hop__528263_865831",
+        "2hop__587048_621800",
+        "2hop__682872_516436",
+        "2hop__695364_513121",
+        "2hop__77233_33207",
+        "2hop__83938_5666",
+        "2hop__846388_19320",
+        "2hop__85931_108632",
+        "4hop1__39871_314549_131976_56103",
+        "4hop1__43565_624859_355213_203322",
+        "4hop1__58323_375563_161848_53331",
+        "5a71380c5542994082a3e68b",
+        "5a713fb15542994082a3e6f0",
+        "5a7222b155429971e9dc92c4",
+        "5a7f44a65542992e7d278cd7",
+        "5a807b44554299485f59860a",
+        "5a80f4c2554299260e20a1da",
+        "5a81e04455429903bc27b9f9",
+        "5a821b4b5542995ce29dccab",
+        "5a84b9c95542997b5ce3ff35",
+        "5a8a416955429930ff3c0d2b",
+        "5a8cdcb0554299441c6b9f33",
+        "5a8d8e4f5542994ba4e3dca7",
+        "5a90ab995542990a98493683",
+        "5ab41f6b5542991751b4d671",
+        "5ab5d6155542997d4ad1f1fa",
+        "5ab67c0055429954757d32f6",
+        "5ab925fd554299131ca42281",
+        "5ab928c255429934fafe6e6e",
+        "5ab953a45542996be202047f",
+        "5aba89d555429901930fa816",
+        "5abd72d155429933744ab7e0",
+        "5abd94525542992ac4f382d2",
+        "5abe689a55429976d4830b16",
+        "5ac34994554299741d48a242",
+        "5ac3c0495542995ef918c215",
+        "5ac44b47554299194317396c",
+        "5ac4ec9955429924173fb4da",
+        "5add7a335542992200553b37",
+        "5ade8ad95542992fa25da7b8",
+        "5ae1599155429901ffe4ae7b",
+        "5ae26cb15542994d89d5b421",
+        "5ae4aba25542995ad6573e12",
+        "5ae5a63c5542992663a4f203",
+        "5ae71f06554299572ea54708",
+        "5ae7fa5a554299540e5a56e4"
+      ]
+    },
+    "C_vs_B": {
+      "delta": 0.005,
+      "improved": 1,
+      "worsened": 0,
+      "questions": 100,
+      "families": 100,
+      "largest_family": 1,
+      "f1_delta_ci95": [
+        0.0,
+        0.015
+      ],
+      "total_token_delta": -6958,
+      "total_token_delta_rate": -0.036036315988460924,
+      "em_gained": 1,
+      "em_lost": 0,
+      "changed_query_ids": [
+        "2hop__157251_556157",
+        "2hop__466700_214359",
+        "2hop__528263_865831",
+        "5a80f4c2554299260e20a1da",
+        "5abd94525542992ac4f382d2"
+      ]
+    },
+    "D_vs_C": {
+      "delta": 0.0,
+      "improved": 0,
+      "worsened": 0,
+      "questions": 100,
+      "families": 100,
+      "largest_family": 1,
+      "f1_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_token_delta": 0,
+      "total_token_delta_rate": 0.0,
+      "em_gained": 0,
+      "em_lost": 0,
+      "changed_query_ids": []
+    },
+    "D_vs_B": {
+      "delta": 0.005,
+      "improved": 1,
+      "worsened": 0,
+      "questions": 100,
+      "families": 100,
+      "largest_family": 1,
+      "f1_delta_ci95": [
+        0.0,
+        0.015
+      ],
+      "total_token_delta": -6958,
+      "total_token_delta_rate": -0.036036315988460924,
+      "em_gained": 1,
+      "em_lost": 0,
+      "changed_query_ids": [
+        "2hop__157251_556157",
+        "2hop__466700_214359",
+        "2hop__528263_865831",
+        "5a80f4c2554299260e20a1da",
+        "5abd94525542992ac4f382d2"
+      ]
+    }
+  },
+  "actual_reader_calls": 159,
+  "actual_reader_attempts": 163,
+  "actual_input": 281056,
+  "actual_output": 816
+}

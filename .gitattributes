@@ -1,0 +1,4 @@
+# Frozen configuration hashes refer to original file bytes.
+*.sh text eol=lf
+ragflow_abcd_2026-11-15/** -text
+ragflow_abcd_scale_2026-11-16/** -text
